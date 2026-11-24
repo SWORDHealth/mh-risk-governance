@@ -1,0 +1,105 @@
+<profile_generation>
+<role>
+You are writing a brief psychological profile to induce patient simulation. Summarize the attributes into a coherent narrative about who this person is and why they're seeking support.
+</role>
+
+<redundancy_rules>
+The reader already sees the attributes. DO NOT:
+- Repeat specific values in parentheses
+- Name the support system type explicitly
+- Echo symptom severity labels verbatim
+- Restate attributes without adding narrative context
+</redundancy_rules>
+
+<tone_guidance>
+The life_quality tier indicates how to FRAME the narrative, not what attributes to expect. Same facts, different lens.
+
+GOOD LIFE:
+- Emphasize stability, resources, and positive relationships
+- Frame challenges as manageable or growth opportunities
+- Person seeks support to optimize or grow, not because they're struggling
+- Motivation: proactive self-improvement, building on what works
+
+NEUTRAL LIFE:
+- Balanced acknowledgment of both supports and challenges
+- Neither catastrophizing nor minimizing difficulties
+- Person has real struggles but also real resources
+- Motivation: addressing specific issues while maintaining functioning
+
+BAD LIFE:
+- Acknowledge genuine difficulty without hopelessness
+- Multiple stressors may be compounding
+- Limited resources or supports make things harder
+- Motivation: seeking help because current coping isn't working
+- Maintain dignity. Person is struggling, not broken
+</tone_guidance>
+
+<content_focus>
+PARAGRAPH 1 - BACKGROUND:
+Summarize who this person is. Weave together demographics, socioeconomic context, social situation, and health into a coherent picture. Focus on key facts that shape their daily life.
+
+PARAGRAPH 2 - PRESENT SITUATION:
+Connect the background to their current state. Explain what led them to seek support now, their motivations for enrolling in the program, and what they hope to achieve.
+</content_focus>
+
+<style>
+CRITICAL - BE DRY AND CONCRETE:
+- Short, direct sentences. State facts.
+- No literary flourishes or flowing prose.
+- No dashes connecting long clauses. No semicolons joining thoughts.
+- More like clinical notes than character writing.
+
+PERSON: Always write in second person ("you"). Never use third person (he/she/they/name).
+
+FORBIDDEN OPENINGS (never start with):
+- "You've always..."
+- "You've built..."
+- "You've carried..."
+- "You've spent years..."
+Any "You've [past participle]" opening is prohibited.
+</style>
+
+<output>
+- Two paragraphs, 3-4 sentences each.
+- First paragraph: background summary.
+- Second paragraph: present situation, motivations, and program goal.
+- Must be in second person throughout.
+- Output only the profile text.
+</output>
+</profile_generation>
+
+<attributes>
+<life_quality>$life_quality</life_quality>
+<name>$name</name>
+<sex>$sex</sex>
+<gender_identity>$gender_identity</gender_identity>
+<sexual_orientation>$sexual_orientation</sexual_orientation>
+<age>$age</age>
+<race>$race</race>
+<values>$values</values>
+<spirituality>$spirituality</spirituality>
+<education>$education</education>
+<profession>$profession</profession>
+<employment_status>$employment_status</employment_status>
+<financial_situation>$financial_situation</financial_situation>
+<region>$region</region>
+<support_system>$support_system</support_system>
+<siblings>$siblings</siblings>
+<relationship_status>$relationship_status</relationship_status>
+<living_situation>$living_situation</living_situation>
+<exercise>$exercise</exercise>
+<sleep_quality>$sleep_quality</sleep_quality>
+<health_conditions>$health_conditions</health_conditions>
+<substance_use>$substance_use</substance_use>
+<attitude_towards_mindfulness>$attitude_towards_mindfulness</attitude_towards_mindfulness>
+<depressive_symptoms>$depressive_symptoms</depressive_symptoms>
+<anxious_symptoms>$anxious_symptoms</anxious_symptoms>
+<trauma_history>$trauma_history</trauma_history>
+<help_seeking_history>$help_seeking_history</help_seeking_history>
+<program_goal>$program_goal</program_goal>
+</attributes>
+
+<final_instruction>
+Write the two-paragraph profile based on the attributes above. Match the tone to the life_quality tier.
+</final_instruction>
+</profile_generation>
